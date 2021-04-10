@@ -16,3 +16,16 @@ documents = []
 ignore_words = ['?', '!']
 data_file = open('intents.json').read()
 intents = json.loads(data_file)
+
+for intent in intents['intents']:
+    for pattern in intent['patterns']:
+
+        # Tokenize Each Word
+        w = nltk.word_tokenize(pattern)
+        words.extend(w)
+        # Add Documents In The Corpus
+        documents.append((w, intent['tag']))
+
+        # Add To Our Classes List:
+        if intent['tag'] not in classes:
+            classes.append(intent['tag'])

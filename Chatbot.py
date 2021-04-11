@@ -42,3 +42,19 @@ print(len(classes), 'classes', classes)
 print(len(words), 'unique lemmatized words', words)
 pickle.dump(words,open('words.pkl', 'wb'))
 pickle.dump(classes, open('classes.pkl', 'wb'))
+
+# Creating Training And Testing Data
+
+# Creating Our Training Data
+training = []
+# Create An Empty Array For Our Output
+output_empty = [0] * len(classes)
+# Training set, bag of words for each sentence
+for doc in documents:
+    # Initializing Our Bag Of Words
+    bag = []
+    # List Of Tokenized Words For The Pattern
+    pattern_words = doc[0]
+    # Lemmatized Each Word - Create Base Word, In Attempt To Represent Related Words
+    patern_words = [lemmatizer.lemmatize(words.lower()) for word in pattern_words]
+# Create Our Bag Of Words Array With 1, If Word Match Found In Current Pattern

@@ -68,7 +68,7 @@ for doc in documents:
         training.append([bag, output_row])
 
         # Shuffle Our Features And Turn Into np.array
-        random.shuffle(taraning)
+        random.shuffle(training)
         training = np.array(training)
             
         # Create Train And Tests Lists. X - patterns, Y - intents

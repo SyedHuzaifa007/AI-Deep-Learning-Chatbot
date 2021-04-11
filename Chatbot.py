@@ -34,4 +34,9 @@ for intent in intents['intents']:
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
 words = sorted(list(set(words)))
 # Sort Classes
-classes
+classes = sorted(list(set(classes)))
+# Documents = combinations between patterns and intents
+print(len(documents), 'documents')
+# classes = intents
+print(len(classes), 'classes', classes)
+print(len(words, 'unique lemmatized words', words))

@@ -56,14 +56,14 @@ for doc in documents:
     # List Of Tokenized Words For The Pattern
     pattern_words = doc[0]
     # Lemmatized Each Word - Create Base Word, In Attempt To Represent Related Words
-    patern_words = [lemmatizer.lemmatize(words.lower()) for word in pattern_words]
+    patern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
 # Create Our Bag Of Words Array With 1, If Word Match Found In Current Pattern
     for w in words:
         bag.append(1) if w in patern_words else bag.append(0)
 
         # Output Is A '0' For Each Tag and '1' for current tag (for each pattern)
         output_row = list(output_empty)
-        output_row[classe.index(doc[1])] = 1
+        output_row[classes.index(doc[1])] = 1
 
         training.append([bag, output_row])
 

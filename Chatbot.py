@@ -30,3 +30,8 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
             
+# Lemmatize Lower Each Word And Remove Duplicates
+words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
+words = sorted(list(set(words)))
+# Sort Classes
+classes

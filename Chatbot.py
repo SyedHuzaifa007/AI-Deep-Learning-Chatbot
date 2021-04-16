@@ -76,5 +76,3 @@ for doc in documents:
         train_y = list(training[:,1])
         print("Training Data Created")
         
-
-train

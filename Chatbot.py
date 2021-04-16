@@ -77,3 +77,4 @@ for doc in documents:
         print("Training Data Created")
         
 
+train_x

@@ -75,6 +75,6 @@ for doc in documents:
         train_x = list(training[:,0])
         train_y = list(training[:,1])
         print("Training Data Created")
-        jksj djsjk 
+        
 
 train_x  ioio ksjkjs

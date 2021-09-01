@@ -10,3 +10,4 @@ A chatbot is a computer program that's designed to simulate human conversation. 
 - This chatbot is made for business purposes 
 - This chatbot isn't completed yet 
 - This is a deep learning chatbot
+- This chatbot isn't free to use

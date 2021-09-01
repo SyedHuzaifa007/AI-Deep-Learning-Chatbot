@@ -8,3 +8,4 @@ A chatbot is a computer program that's designed to simulate human conversation. 
 - This chatbot can handle all the general tasks
 - This chatbot can answer general queries and complaints 
 - This chatbot is made for business purposes 
+- This chatbot isn't completed yet 
